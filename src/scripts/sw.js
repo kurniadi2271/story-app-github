@@ -69,7 +69,21 @@ self.addEventListener('push', (event) => {
   console.log('Service worker pushing...');
  
   async function chainPromise() {
-    const data = await event.data.json();
+    let data;
+    try {
+      // Try to parse as JSON first
+      data = await event.data.json();
+    } catch (error) {
+      // If JSON parsing fails, use text content
+      const text = await event.data.text();
+      data = {
+        title: 'New Notification',
+        options: {
+          body: text
+        }
+      };
+    }
+
     await self.registration.showNotification(data.title, {
       body: data.options.body,
     });
