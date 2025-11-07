@@ -92,7 +92,9 @@ export default class NewPage {
                   <div id="map-loading-container"></div>
                 </div>
                 <div class="new-form__location__lat-lng">
+                  <label for="latitude">Latitude</label>
                   <input type="number" name="latitude" value="-6.175389" aria-label="latitude"disabled>
+                  <label for="longitude">Longitude</label>
                   <input type="number" name="longitude" value="106.827139" aria-label="longitude" disabled>
                 </div>
               </div>
