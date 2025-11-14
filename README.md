@@ -14,7 +14,7 @@ StoryApp adalah aplikasi curhat yang memungkinkan warga Indonesia melaporkan mas
 
 ## Instalasi
 
-- Lihat project [storyapp-starter-project](https://warm-dusk-289cb1.netlify.app/).
+- Lihat project [storyapp-starter-project](https://story-app-github.netlify.app/).
 - Unzip berkas ZIP yang telah diunduh. Bisa pakai perintah berikut untuk Linux:
   ```bash
   unzip ./storyapp-starter-project.zip
